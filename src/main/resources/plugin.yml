@@ -1,0 +1,19 @@
+name: RandomFind
+version: 2.0.0
+main: fr.merci.randomfind.RandomFindPlugin
+api-version: '26.2'
+author: Merci
+description: Chaque joueur doit trouver son objet aleatoire avant les autres, manche apres manche. Compatible Java + Bedrock (Geyser/Floodgate).
+folia-supported: false
+softdepend: [floodgate]
+commands:
+  rf:
+    description: Commandes du jeu RandomFind
+    usage: /rf help
+permissions:
+  randomfind.play:
+    description: Autorise a rejoindre/quitter et consulter les infos de RandomFind
+    default: true
+  randomfind.admin:
+    description: Autorise a demarrer/arreter/configurer les parties RandomFind
+    default: op

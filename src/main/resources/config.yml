@@ -1,0 +1,29 @@
+# Nom du monde ou se joue le jeu
+world: world
+
+# Distance minimale et maximale (en blocs) autour du spawn du monde,
+# a laquelle les joueurs sont teleportes aleatoirement a chaque manche
+# (comme un RTP classique)
+min-radius: 1000
+max-radius: 10000
+
+# Nombre de points necessaires pour gagner la partie
+win-score: 5
+
+# Temps limite par manche en secondes (0 = illimite).
+# Si personne ne trouve a temps, tout le monde reçoit un nouvel objet.
+round-time-seconds: 90
+
+# Chance (en %) de tomber sur un objet "rare" (netherite, elytra, totem...)
+# plutot que sur un objet courant. Mettre 0 pour desactiver les objets rares.
+rare-chance: 8
+
+# Empeche de jeter au sol un objet qui est actuellement l'objectif de
+# quelqu'un (evite qu'un joueur refile son objet a un autre).
+prevent-trading: true
+
+# Si active (recommande des que le serveur accepte des joueurs Bedrock via
+# Geyser/Floodgate), le tirage se limite a une liste d'objets qui existent
+# et s'obtiennent de la meme facon sur Java ET Bedrock. Evite qu'un joueur
+# tombe sur un objet exclusif a une edition qu'il ne pourra jamais trouver.
+restrict-to-safe-list: true
